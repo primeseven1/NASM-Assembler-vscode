@@ -1,8 +1,6 @@
 bits 16
 org 0x7c00
 
-section .data
-
 section .text
 start:
     mov ah, 0x00
