@@ -1,0 +1,3 @@
+*.s
+nasm-assembler-syntax/vsc-extension-quickstart.md
+nasm-assembler-syntax/.vscodeignore

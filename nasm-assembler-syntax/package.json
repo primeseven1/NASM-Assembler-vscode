@@ -1,0 +1,25 @@
+{
+  "name": "nasm-assembler-syntax",
+  "displayName": "NASM Assembler Syntax",
+  "description": "NASM assembler syntax highlighting",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "nasm",
+      "aliases": ["NASM", "nasm"],
+      "extensions": [".asm",".nasm",".s",".ASM",".NASM",".S"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "nasm",
+      "scopeName": "source.nasm",
+      "path": "./syntaxes/nasm.tmLanguage.json"
+    }]
+  }
+}
