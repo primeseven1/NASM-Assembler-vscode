@@ -2,7 +2,6 @@ bits 16
 org 0x7c00
 
 section .data
-let: db 8
 
 section .text
 start:
