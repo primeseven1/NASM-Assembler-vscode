@@ -186,6 +186,10 @@
 				{
 					"name": "constant.numeric.registers.control",
 					"match": "\\b(?i:CR[0-8])\\b"
+				},
+				{
+					"name": "constant.numeric.registers.other",
+					"match": "\\b(?i:GDTR|IDTR|LDTR)\\b"
 				}
 			]
 		},

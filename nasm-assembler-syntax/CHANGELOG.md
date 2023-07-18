@@ -1,3 +1,6 @@
 # Change Log
 
-- First Release 1.0
+- First Release 0.01
+
+- Second Release 0.02
+* Added IDTR, GDTR, and LDTR register
