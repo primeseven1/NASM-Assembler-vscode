@@ -4,7 +4,7 @@
   "description": "NASM assembler syntax highlighting",
   "repository": "https://github.com/primeseven1/NASM-Assembler-vscode",
   "publisher": "primeseven",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.80.0"
   },
