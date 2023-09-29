@@ -127,8 +127,9 @@
 				{"name": "keyword.instructions.group100", "match": "\\b(?i:VRNDSCALESS|VMGEXIT|PCLMULQDQ|VPMOVQ2M|ANDNPS|VALIGND|PREFETCHWT1|VCMPGT_OSPD|VANDNPS|VPMAXSQ|UD2|FINCSTP|MASKMOVDQU|PSHUFLW|VCVTTPH2W|UNPCKHPS|VSCALEFSH|VPDPBUUDS|LSS|VCMPNLT_USSS)\\b"},
 				{"name": "keyword.instructions.group101", "match": "\\b(?i:XEND|RDMSR|VCMPNEQSD|VPMINUB|STOSW|WRSHR|VMOVDQA32|VRANGESS|V4FNMADDPS|LWPVAL|LZCNT|VMULPH|VFPCLASSSS|V4FNMADDSS|BSWAP|VCMPUNORD_SSS|CRC32|FUCOM|VCMPUNORDSD|PTWRITE)\\b"},
 				{"name": "keyword.instructions.group102", "match": "\\b(?i:VPSHUFLW|VRANGEPS|VPADDD|VPUNPCKLBW|VPERMW|VPCMPGTB|PMACHRIW|SETSSBSY|PSLLDQ|PADDSIW|VPSIGNB|VPMOVZXWD|VFNMADDPD|MINPD|VCMPGTPS|ANDPS|CMPEQSS|VCVTTSD2SI|VBROADCASTF128|VPERM2I128)\\b"},
-				{"name": "keyword.instructions.group103", "match": "\\b(?i:VPMSUB213SH|VSHUFF64X2|VPCMPNEQW|VFNMADD321SD|FADD|CVTTPD2PI|PREFETCHW|FPREM1|VADDSD|V4DPWSSD|ENDBR32|VFNMADD231SS|FCOM|VCMPNEQ_UQPD|VPCMPEQB|SHLX|VMOVQQU|VFMSUB231PS|VCMPNGESD|VFNMADDSS)\\b"},
-				{"name": "keyword.instructions.group104", "match": "\\b(?i:JA|JAE|JB|JBE|JE|JG|JGE|JL|JLE|JNA|JNAE|JNB|JNBE|JNE|JNG|JNGE|JNL|JNLE|JNO|JNP|JNS|JNZ|JO|JP|JPE|JPO|JS|JZ)\\b"},
+				{"name": "keyword.instructions.group103", "match": "\\b(?i:VPMSUB213SH|VSHUFF64X2|VPCMPNEQW|VFNMADD321SD|FADD|CVTTPD2PI|PREFETCHW|FPREM1|VADDSD|V4DPWSSD|ENDBR32|VFNMADD231SS|FCOM|VCMPNEQ_UQPD|VPCMPEQB|SHLX|VMOVQQU|VFMSUB231PS|VCMPNGESD|VFNMADDSS|VSQRTSH|VCVTTSH2USI)\\b"},
+				{"name": "keyword.instructions.group104", "match": "\\b(?i:VRCP28PS|VCMPNLT_UQSS|VFMADDPD|VFMSUB312PS|PFRCP)\\b"},
+				{"name": "keyword.instructions.group105", "match": "\\b(?i:JA|JAE|JB|JBE|JE|JG|JGE|JL|JLE|JNA|JNAE|JNB|JNBE|JNE|JNG|JNGE|JNL|JNLE|JNO|JNP|JNS|JNZ|JO|JP|JPE|JPO|JS|JZ)\\b"},
 				{"name": "keyword.other", "match": "\\b(?i:GLOBAL|EXTERN|BITS|ORG|TIMES|ALIGN|ABSOLUTE|REQUIRED|STATIC|FLOAT|BYTE|WORD|DWORD|QWORD)\\b"},
 				{"name": "keyword.preprocessor.group1", "match": "%\\b(line|define|xdefine|undef|assign|defstr|deftok|defalias|strcat|strlen|substr|abs|cond|count|eval|is|num|sel|str|tok|if|ifmacro|ifctx|if|ifidn|ifidni|ifid|ifnum)\\b"},
 				{"name": "keyword.preprocessor.group2", "match": "%\\b(ifstr|iftoken|ifempty|ifenv|include|pathsearch|depend|use|push|pop|repl|arg|stacksize|local|pragma|line|!variable|clear)\\b"}
@@ -161,15 +162,15 @@
 			"patterns": [
 				{
 					"name": "constant.numeric.registers.64",
-					"match": "\\b(?i:RAX|RBX|RCX|RDX|RSI|RDI|RSP|RBP|R8|R9|R10|R11|R12|R13|R14|RFLAGS)\\b"
+					"match": "\\b(?i:RAX|RBX|RCX|RDX|RSI|RDI|RSP|RBP|R8|R9|R10|R11|R12|R13|R14|R15|RFLAGS|RIP)\\b"
 				},
 				{
 					"name": "constant.numeric.registers.86",
-					"match": "\\b(?i:EAX|EBX|ECX|EDX|ESI|EDI|ESP|EBP|R8D|R9D|R10D|R11D|R12D|R13D|R14D|EFLAGS)\\b"
+					"match": "\\b(?i:EAX|EBX|ECX|EDX|ESI|EDI|ESP|EBP|R8D|R9D|R10D|R11D|R12D|R13D|R14D|R15D|EFLAGS|EIP)\\b"
 				},
 				{
 					"name": "constant.numeric.registers.16",
-					"match": "\\b(?i:AX|BX|CX|DX|SI|DI|SP|BP|R8W|R9W|R10W|R11W|R12W|R13W|R14W|FLAGS|CS|DS|SS|ES|GS|FS)\\b"
+					"match": "\\b(?i:AX|BX|CX|DX|SI|DI|SP|BP|R8W|R9W|R10W|R11W|R12W|R13W|R14W|R15W|FLAGS|CS|DS|SS|ES|GS|FS|IP)\\b"
 				},
 				{
 					"name": "constant.numeric.registers.8",
@@ -235,3 +236,4 @@
 
 	"scopeName": "source.nasm"
 }
+
