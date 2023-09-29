@@ -7,3 +7,6 @@
 
 - Version 0.03
 * Added capital letters for hex and binary numbers (X, H, B)
+
+- Version 0.04
+* Added missing instructions + other missing stuff
